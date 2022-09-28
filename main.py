@@ -19,12 +19,6 @@ qr_code = qrcode.QRCode(
 qr_code.add_data(code)
 qr_code.make(fit=True)
 
-img = qr_code.make_image()
-img.save("wifi.svg")
-
-qr_code_png = qr_code.make_image()
-qr_code_png.save("wifi.png")
-
 qr = qrcode.QRCode()
 qr.add_data(code)
 f = io.StringIO()
